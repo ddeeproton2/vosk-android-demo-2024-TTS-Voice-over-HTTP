@@ -10,7 +10,7 @@ Added features:
 
 -Continue to run in background
 
--Send the text of your voice over GET HTTPS (not HTTP, because Android limitations) or any TCP Server
+-Send the text of your voice over GET HTTPS (not HTTP, because Android limitations) or any TCP Server with SSL
 
 -Recieve voice to speak on your phone into a Web server in HTTP (not HTTPS, because this is the first version of this application, and HTTP is the easiest way to make it)
 
