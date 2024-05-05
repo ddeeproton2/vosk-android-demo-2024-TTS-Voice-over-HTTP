@@ -2,7 +2,7 @@ Vosk Android demo - upgraded 2024
 
 1. Speak to your phone, and send command over HTTPS
 
-2. Make you phone to speak, from others applications over HTTP.
+2. Make your phone to speak, from others applications over HTTP.
 
 3. Switch to audio bluetooth if aviable, or use your main microphone in last ressort.
 
