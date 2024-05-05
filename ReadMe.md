@@ -1,8 +1,12 @@
 Vosk Android demo - upgraded 2024
 
+Speak to your phone, and send command over HTTPS.
+
+Make you phone to speak, from others applications over HTTP.
+
 Added features:
 
--Switch to audio bluetooth if aviable
+-Switch to audio bluetooth if aviable, or use your main microphone in last ressort.
 
 -Continue to run in background
 
