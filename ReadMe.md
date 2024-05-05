@@ -24,9 +24,9 @@ You must script this part. But this is why this application is cool :)
 ____________________________
 
 This project is compiled for French language. I will, translate it others languages "if I have time for it" and disk space here. 
-But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested).
+But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested). I used Windows 10.
 
-You will need to download a text voice assistant also (from Samsung store). In this case in French, to make your phone speaking.
+You will need to download a text voice in your mobilephone also (from Samsung store for me). In this case in French, to make your phone speaking.
 
 This project is a merging of others projects. I let everything as it was it this repository.
 
