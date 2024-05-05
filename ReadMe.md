@@ -15,7 +15,7 @@ Then, this voice assistant can be merged with any other server script. Like Apac
 Any other language allowing to create a web server in HTTPS and send back the GET request in HTTP to this Android apk.
 
 This project is compiled for French language. I will, translate it others languages "if I have time for it" and disk space here. 
-But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested. Found them with "the directory name" of the model used).
+But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested before).
 
 This project is a merging of others projects. I let everything as it was. So many things is aviable but I did not used them.
 
