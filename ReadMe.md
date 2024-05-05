@@ -26,6 +26,8 @@ ____________________________
 This project is compiled for French language. I will, translate it others languages "if I have time for it" and disk space here. 
 But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested).
 
+You will need to download a text voice assistant also (from Samsung store). In this case in French.
+
 This project is a merging of others projects. I let everything as it was it this repository.
 
 Thanks to all contributors. :)
