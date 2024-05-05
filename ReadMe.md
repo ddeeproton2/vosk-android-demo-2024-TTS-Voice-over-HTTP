@@ -26,6 +26,7 @@ And the server can respond to your phone with
 
 http://your_ip_phone/?message=mymessage
 
+You must script this part. But this is why this application is cool :)
 ____________________________
 
 This project is compiled for French language. I will, translate it others languages "if I have time for it" and disk space here. 
