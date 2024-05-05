@@ -23,7 +23,7 @@ http://your_ip_phone/?message=mymessage
 You must script this part. But this is why this application is cool :)
 ____________________________
 
-This project is compiled for French language here:
+The apk Android French language is here:
 
 https://github.com/ddeeproton2/vosk-android-demo-2024-TTS-Voice-over-HTTP/releases/tag/v1.0.0
 
