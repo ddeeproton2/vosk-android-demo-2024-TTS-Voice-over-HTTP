@@ -1,6 +1,6 @@
 Vosk Android demo - upgraded 2024
 
-1. Speak to your phone, and send command over HTTPS.
+1. Speak to your phone, and send command over HTTPS
 
 2. Make you phone to speak, from others applications over HTTP.
 
