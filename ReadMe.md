@@ -29,7 +29,7 @@ https://github.com/ddeeproton2/vosk-android-demo-2024-TTS-Voice-over-HTTP/releas
 
 I will, translate it others languages "if I have time for it" and disk space here. 
 
-But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested). I used Windows 10.
+But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested). I used Windows 10 to compile it.
 
 You will need to download a text voice in your mobilephone also (from Samsung store for me). In this case in French, to make your phone speaking.
 
