@@ -14,7 +14,7 @@ Added features:
 
 -Recieve voice to speak on your phone with a local HTTP server started with this application
 
-This voice assistant is designed to be combined with an server, you must script this part yourself, in the language of your choice, but this is why, this application is cool :) 
+This voice assistant is designed to be combined with a server of your choice, in the language of your choice :) 
 
 This project is compiled for French language. I will, translate it others languages "if I have time for it" and disk space here. 
 But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested before).
