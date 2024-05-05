@@ -1,8 +1,8 @@
 Vosk Android demo - upgraded 2024
 
-Speak to your phone, and send command over HTTPS.
+1. Speak to your phone, and send command over HTTPS.
 
-Make you phone to speak, from others applications over HTTP.
+2. Make you phone to speak, from others applications over HTTP.
 
 Added features:
 
@@ -13,6 +13,8 @@ Added features:
 -Send the text of your voice over GET HTTPS (not HTTP, because Android limitations) or a TCP Server with SSL
 
 -Recieve voice to speak on your phone with a local HTTP server started with this application
+
+____________________________
 
 This voice assistant is designed to be combined with a server :) 
 
