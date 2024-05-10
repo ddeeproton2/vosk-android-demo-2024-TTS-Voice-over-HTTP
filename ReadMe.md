@@ -37,6 +37,8 @@ I will, translate it others languages "if I have time for it" and disk space her
 
 But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested). I used Windows 10 to compile it.
 
+https://alphacephei.com/vosk/models
+
 You will need to download a text voice in your mobilephone also (from Samsung store for me). In this case in French, to make your phone speaking.
 
 This project is a merging of others projects. I let everything as it was it this repository.
