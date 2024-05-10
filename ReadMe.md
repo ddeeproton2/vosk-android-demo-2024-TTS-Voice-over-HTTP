@@ -45,7 +45,7 @@ https://alphacephei.com/vosk/models
 
 https://developer.android.com/studio
 
-You will need to download a text voice in your mobilephone also (from Samsung store for me). In this case in French, to make your phone speaking.
+You will need to download a text voice in your mobilephone also (from Samsung store for eg.). In this case in French, to make your phone speaking.
 
 This project is a merging of others projects. I let everything as it was it this repository.
 
