@@ -27,6 +27,8 @@ You can see how to do this server here
 https://github.com/ddeeproton2/vosk-python/tree/main/others/NodeJS/socketionodejs
 ____________________________
 
+Releases:
+
 The apk Android French language is here:
 
 https://github.com/ddeeproton2/vosk-android-demo-2024-TTS-Voice-over-HTTP/releases/tag/v1.0.0
