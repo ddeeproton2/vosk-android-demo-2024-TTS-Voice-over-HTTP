@@ -29,6 +29,10 @@ The apk Android French language is here:
 
 https://github.com/ddeeproton2/vosk-android-demo-2024-TTS-Voice-over-HTTP/releases/tag/v1.0.0
 
+Chinese, Dutch, English, German, Italian, Japanese, Portuguese, Russian, Spanish, Turkish, here :
+
+https://github.com/ddeeproton2/vosk-android-demo-2024-TTS-Voice-over-HTTP/releases/tag/v1.0.0_
+
 I will, translate it others languages "if I have time for it" and disk space here. 
 
 But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested). I used Windows 10 to compile it.
