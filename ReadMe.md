@@ -22,7 +22,9 @@ http://your_ip_phone/?message=mymessage
 
 You must script this part. But this is why this application is cool :)
 
-You can see how to do this server here https://github.com/ddeeproton2/vosk-python/tree/main/others/NodeJS/socketionodejs
+You can see how to do this server here 
+
+https://github.com/ddeeproton2/vosk-python/tree/main/others/NodeJS/socketionodejs
 ____________________________
 
 The apk Android French language is here:
