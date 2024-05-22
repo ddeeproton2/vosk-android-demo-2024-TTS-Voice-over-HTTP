@@ -1,22 +1,57 @@
 Vosk Android demo - upgraded 2024
 
-Added features:
+1. Speak to your phone, and send command over HTTPS
 
--Switch to audio bluetooth if aviable
+2. Make your phone to speak, from others applications over HTTP.
 
--Continue to run in background
+3. Switch to audio bluetooth if aviable, or use your main microphone in last ressort.
 
--Send the text of your voice over GET HTTPS (not HTTP, because Android limitations) or any TCP Server
+4. Continue to run in background
 
--Recieve voice to speak on your phone into a Web server in HTTP (not HTTPS, because this is the first version of this application, and HTTP is the easiest way to make it)
+____________________________
 
-Then, this voice assistant can be merged with any other server script. Like Apache-PHP, NodeJS, ...
+On the server part:
 
-Any other language allowing to create a web server in HTTPS and send back the GET request in HTTP to this Android apk.
+The server will recieve a get request like this
 
-This project is compiled for French language. I will, translate it others languages "if I have time for it" and disk space here. 
-But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested before).
+https://everythingyouwant/mymessage
 
-This project is a merging of others projects. I let everything as it was. So many things is aviable but I did not used them.
+And the server can respond to your phone with
+
+http://your_ip_phone/?message=mymessage
+
+You must script this part. But this is why this application is cool :)
+
+You can see how to do this server here 
+
+https://github.com/ddeeproton2/vosk-python/tree/main/others/NodeJS/socketionodejs
+
+You can see how to link this application with a LLM (Large Language Model) to speak with bots here
+
+https://github.com/ddeeproton2/vosk-python/tree/main/others/NodeJS/Jan-api
+
+____________________________
+
+Releases:
+
+The apk Android French language is here:
+
+https://github.com/ddeeproton2/vosk-android-demo-2024-TTS-Voice-over-HTTP/releases/tag/v1.0.0
+
+Chinese, Dutch, English, German, Italian, Japanese, Portuguese, Russian, Spanish, Turkish, here :
+
+https://github.com/ddeeproton2/vosk-android-demo-2024-TTS-Voice-over-HTTP/releases/tag/v1.0.0_
+
+I will, translate it others languages "if I have time for it" and disk space here. 
+
+But from now, you can compile yourself in your langage by downloading your model from Vosk website, and compile this with Android Studio (configuration modification is requested). I used Windows 10 to compile it.
+
+https://alphacephei.com/vosk/models
+
+https://developer.android.com/studio
+
+You will need to download a text voice in your mobilephone also (from Samsung store for eg.) to make your phone speaking.
+
+This project is a merging of others projects. I let everything as it was it this repository.
 
 Thanks to all contributors. :)
