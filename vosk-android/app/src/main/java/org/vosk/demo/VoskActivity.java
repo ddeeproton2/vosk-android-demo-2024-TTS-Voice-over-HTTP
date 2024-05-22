@@ -34,8 +34,10 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -77,6 +79,9 @@ public class VoskActivity<temp_result> extends Activity {
     WebServerHTTP web = null;
     private String url_output_voice = "https://127.0.0.1:24443/speak?msg=";
     private String listen_port = "12121";
+    private Boolean use_microphone_on_speech = false;
+    private Boolean use_speech_onrecognition = false;
+
 
     @SuppressLint("UnspecifiedRegisterReceiverFlag")
     @Override
@@ -122,22 +127,29 @@ public class VoskActivity<temp_result> extends Activity {
 
         });
 
+        VoskActivity base = this;
         // If TextToSpeech running, pause listening
         tts.setOnUtteranceProgressListener(new UtteranceProgressListener() {
 
             @Override
             public void onStart(String utteranceId) {
-                pause(true);
+                if(!base.use_microphone_on_speech) {
+                    pause(true);
+                }
             }
 
             @Override
             public void onDone(String utteranceId) {
-                pause(false);
+                if(!base.use_microphone_on_speech) {
+                    pause(false);
+                }
             }
 
             @Override
             public void onError(String utteranceId) {
-                pause(false);
+                if(!base.use_microphone_on_speech) {
+                    pause(false);
+                }
             }
         });
 
@@ -164,6 +176,9 @@ public class VoskActivity<temp_result> extends Activity {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("url_output_voice", this.url_output_voice);
         editor.putString("listen_port",this.listen_port);
+        editor.putBoolean("use_microphone_on_speech",this.use_microphone_on_speech);
+        editor.putBoolean("use_speech_onrecognition",this.use_speech_onrecognition);
+
         editor.apply();
     }
 
@@ -172,6 +187,8 @@ public class VoskActivity<temp_result> extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences("config_file", Context.MODE_PRIVATE);
         this.url_output_voice = sharedPreferences.getString("url_output_voice", this.url_output_voice);
         this.listen_port = sharedPreferences.getString("listen_port", this.listen_port);
+        this.use_microphone_on_speech = sharedPreferences.getBoolean("use_microphone_on_speech",this.use_microphone_on_speech);
+        this.use_speech_onrecognition = sharedPreferences.getBoolean("use_speech_onrecognition",this.use_speech_onrecognition);
     }
 
 
@@ -281,13 +298,32 @@ public class VoskActivity<temp_result> extends Activity {
             }
         });
 
-        Button button_test_file_voice = findViewById(id.button_test_file_voice);
+        Button button_test_file_voice = findViewById(R.id.button_test_file_voice);
         button_test_file_voice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 voskrecognition.recognizeFile();
                 String url = base.url_output_voice + "one%20two%20three%20four%20five";
                 WebClientHTTP.sendGetInBackground(url);
+            }
+        });
+
+
+        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch switch_use_microphone_on_speech = findViewById(R.id.use_microphone_on_speech);
+        switch_use_microphone_on_speech.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                base.use_microphone_on_speech = isChecked;
+                config_save();
+            }
+        });
+
+        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch switch_speech_onrecognition = findViewById(R.id.switch_speech_onrecognition);
+        switch_speech_onrecognition.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                base.use_speech_onrecognition = isChecked;
+                config_save();
             }
         });
 
@@ -355,7 +391,9 @@ public class VoskActivity<temp_result> extends Activity {
             temp_result = temp_result + hypothesis + ". ";
             System.out.println(hypothesis + "result");
             resultView.setText(temp_result);
-            this.say(hypothesis);
+            if(this.use_speech_onrecognition) {
+                this.say(hypothesis);
+            }
             String encodedMessage = URLEncoder.encode(hypothesis, "UTF-8");
             String url = this.url_output_voice + encodedMessage;
             WebClientHTTP.sendGetInBackground(url);

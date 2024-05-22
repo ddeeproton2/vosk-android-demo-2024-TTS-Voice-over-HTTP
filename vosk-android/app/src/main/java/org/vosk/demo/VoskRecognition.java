@@ -68,7 +68,7 @@ public class VoskRecognition implements RecognitionListener {
 
     public void initModel() {
 
-        StorageService.unpack(this.context, "model-fr-sm", "model",
+        StorageService.unpack(this.context, "vosk-model-small-fr-0.22", "model",
                 (model) -> {
                     this.model = model;
                     this.base.setUiState(this.base.STATE_READY);
@@ -122,7 +122,7 @@ public class VoskRecognition implements RecognitionListener {
                 //Log.d(TAG, "Audio SCO state: " + state);
                 try {
                     //MyWakeLockManager.acquireWakeLock(getApplicationContext());
-                    self.temp_result="";
+                    self.base.temp_result="";
                     Recognizer rec = new Recognizer(model, 16000.0f);
                     self.speechService = new SpeechService(rec, 16000.0f);
                     self.speechService.startListening(self);
