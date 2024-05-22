@@ -310,6 +310,7 @@ public class VoskActivity<temp_result> extends Activity {
 
 
         @SuppressLint("UseSwitchCompatOrMaterialCode") Switch switch_use_microphone_on_speech = findViewById(R.id.use_microphone_on_speech);
+        switch_use_microphone_on_speech.setChecked(this.use_microphone_on_speech);
         switch_use_microphone_on_speech.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -318,7 +319,9 @@ public class VoskActivity<temp_result> extends Activity {
             }
         });
 
+
         @SuppressLint("UseSwitchCompatOrMaterialCode") Switch switch_speech_onrecognition = findViewById(R.id.switch_speech_onrecognition);
+        switch_speech_onrecognition.setChecked(this.use_speech_onrecognition);
         switch_speech_onrecognition.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
