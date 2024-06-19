@@ -1,3 +1,11 @@
+This project is discontinued from github from 20 jun 2024 because of 2FA.
+
+You will find the next releases on my personnal TOR website (if online)
+
+http://pb6eymfu7ow6jlvwgsjh75ojr5pwvcr47bx3axo4b6d3t6nyprmugzad.onion
+
+____________________________
+
 Vosk Android demo - upgraded 2024
 
 1. Speak to your phone, and send command over HTTPS
