@@ -7,6 +7,10 @@ http://pb6eymfu7ow6jlvwgsjh75ojr5pwvcr47bx3axo4b6d3t6nyprmugzad.onion
 or try my website
 
 http://ddeeproton.infinityfreeapp.com
+
+My GAB social network
+
+https://gab.com/ddeeproton
 ____________________________
 
 Vosk Android demo - upgraded 2024
