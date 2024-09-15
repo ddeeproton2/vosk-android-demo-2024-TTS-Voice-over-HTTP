@@ -4,6 +4,9 @@ You will find the next releases on my personnal TOR website (if online)
 
 http://pb6eymfu7ow6jlvwgsjh75ojr5pwvcr47bx3axo4b6d3t6nyprmugzad.onion
 
+or try my website
+
+http://ddeeproton.infinityfreeapp.com
 ____________________________
 
 Vosk Android demo - upgraded 2024
