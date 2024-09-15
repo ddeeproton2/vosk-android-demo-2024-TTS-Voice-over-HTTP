@@ -1,16 +1,19 @@
-This project is discontinued from github from 20 jun 2024 because of 2FA.
+Updates are discontinued from github. Goto GitLab to get the last updates here:
 
-You will find the next releases on my personnal TOR website (if online)
+https://gitlab.com/ddeeproton/android-vosk
+____________________________
 
-http://pb6eymfu7ow6jlvwgsjh75ojr5pwvcr47bx3axo4b6d3t6nyprmugzad.onion
+GAB social network
 
-or try my website
+https://gab.com/ddeeproton
+
+Website
 
 http://ddeeproton.infinityfreeapp.com
 
-My GAB social network
+TOR website (if online)
 
-https://gab.com/ddeeproton
+http://pb6eymfu7ow6jlvwgsjh75ojr5pwvcr47bx3axo4b6d3t6nyprmugzad.onion
 ____________________________
 
 Vosk Android demo - upgraded 2024
